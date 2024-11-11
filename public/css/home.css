@@ -1,0 +1,190 @@
+html {
+  /* Animation Related Variables */
+  --aniDuration: 8s;
+  --compCount: 8;
+}
+
+/* HEADER SECTION */
+header {
+  height: 70vh;
+  color: var(--white);
+  position: relative;
+  flex-direction: column;
+  justify-content: center !important;
+  /* background-color: var(--black); */
+  background-size: cover;
+  background-position: left;
+  background-image: linear-gradient(
+    to bottom,
+    var(--marian-blue) 10%,
+    var(--white)
+  );
+}
+
+.headline {
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+  font-size: 2.66rem;
+}
+
+.header-content {
+  width: 18rem;
+  line-height: 1.66;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* User Images */
+.users {
+  position: relative;
+  margin-top: 1.66rem;
+  left: 12px;
+}
+.user-face {
+  width: 52px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  margin-left: -20px;
+}
+
+/* Clients */
+.clients-section {
+  width: 42rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  text-align: center;
+  line-height: 1.77;
+}
+
+.clients-section .heading {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.clients {
+  position: relative;
+  height: 300px;
+  overflow-x: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollleft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  border-radius: 6px;
+  position: absolute;
+  left: calc(200px * 8);
+  animation-name: scrollleft;
+  animation-duration: var(--aniDuration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item img {
+  padding: 1em;
+  width: 100%;
+  opacity: 0.77;
+}
+
+.item1 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -1);
+}
+
+.item2 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -2);
+}
+
+.item3 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -3);
+}
+
+.item4 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -4);
+}
+
+.item5 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -5);
+}
+
+.item6 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -6);
+}
+
+.item7 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -7);
+}
+
+.item8 {
+  animation-delay: calc(var(--aniDuration) / var(--compCount) * -8);
+}
+
+.content-client {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.44rem;
+  margin-bottom: 1rem;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+  max-width: 72rem;
+  margin: 5rem auto;
+  position: relative;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.testimonial-description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.77rem;
+  align-items: flex-start;
+}
+
+.meeting-testimonial {
+  max-height: 440px;
+}
+
+.quote {
+  width: 96px;
+  height: 96px;
+  background-color: var(--);
+  padding: 1.77rem;
+  border-radius: 50%;
+  background-color: var(--light-cyan);
+}
+
+.quote img {
+  width: 100%;
+}
+
+.main-description {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+/* TESTIMONIAL BUTTON CONTAINER */
+.btn--spe-start {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--white);
+  background-color: var(--marian-blue);
+}

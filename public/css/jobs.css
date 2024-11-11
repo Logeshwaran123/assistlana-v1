@@ -1,0 +1,38 @@
+/* Categories */
+.categories-section {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.important-info {
+  display: flex;
+  column-gap: 2rem;
+  margin-bottom: 0.66rem;
+}
+
+.category {
+  padding: 1rem 2rem;
+}
+
+/* Adding the Category */
+.category:not(.active) {
+  background-color: var(--white);
+}
+
+.active-cate {
+  background-color: var(--vivid-sky-blue) !important;
+}
+
+.job {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 120px;
+  padding: 1rem 2rem;
+  color: var(--federal-blue);
+  margin: 2rem 0;
+  border: 2px solid var(--vivid-sky-blue);
+}
+
+.job-headline {
+  font-size: 2rem;
+}

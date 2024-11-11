@@ -1,0 +1,157 @@
+nav {
+  background-color: var(--white);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  max-width: 156px !important;
+  position: relative;
+}
+
+.nav-panel {
+  font-weight: 500;
+  flex-grow: 0.23;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.44s ease-in-out;
+}
+
+/* ION ICON STYLING */
+ion-icon[name="close-outline"],
+ion-icon[name="menu-outline"] {
+  display: none;
+}
+
+@media (max-width: 56rem) {
+  /* ICONS - Styling */
+  ion-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-panel {
+    font-size: 1.66rem;
+    top: 64px;
+    width: 100vw;
+    left: 0;
+    color: var(--white);
+    padding: 2.44rem 0;
+    background-color: var(--black);
+    flex-direction: column;
+    row-gap: 3rem;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .active .nav-panel {
+    left: -100vw;
+  }
+
+  .active ion-icon[name="close-outline"] {
+    display: none;
+  }
+  .active ion-icon[name="menu-outline"] {
+    display: block;
+  }
+  nav:not(.active) ion-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* Scroll Watcher */
+.scroll-watcher {
+  width: 100%;
+  height: 4px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--accent-2);
+  scale: 0 1;
+  transform-origin: left;
+
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+/* Keyframes */
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+.shadow {
+  box-shadow: 0 3px 8px var(--accent);
+}
+
+.highlights {
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.102rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1.55em;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* Footer Section */
+footer {
+  color: var(--black);
+  background-color: var(--light-cyan);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.important-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.about,
+.jobs,
+.terms {
+  list-style-type: none;
+  line-height: 1.66;
+  cursor: pointer;
+}
+
+.about li:hover,
+.jobs li:hover,
+.terms li:hover {
+  text-decoration: underline;
+}
+
+.full-logo-image {
+  align-self: flex-start;
+}
+
+.address-info {
+  max-width: 360px;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  justify-content: left;
+  font-size: 2rem;
+  column-gap: 1rem;
+}
+
+.row--2 {
+  margin-top: 2rem;
+}
+
+.copy {
+  align-self: flex-end;
+}

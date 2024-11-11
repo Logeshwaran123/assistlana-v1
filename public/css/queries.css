@@ -1,0 +1,30 @@
+@media (max-width: 52rem) {
+  .clients-section {
+    display: none;
+  }
+
+  .important-links {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-section,
+  .important-info {
+    row-gap: 1rem;
+    flex-direction: column;
+  }
+
+  .important-info {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  .job {
+    grid-template-columns: auto;
+  }
+
+  .apply-link {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--vivid-sky-blue);
+  }
+}

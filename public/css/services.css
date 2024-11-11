@@ -1,0 +1,210 @@
+.Contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("pexels-cottonbro-3944458");
+  background-size: cover;
+}
+
+.Contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.Contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.Contact .content p {
+  font-weight: 300;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .cntainerinfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .cntainerinfo .box {
+  position: relative;
+  padding: 20px;
+  display: flex;
+}
+
+.container .cntainerinfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .cntainerinfo .box .icon .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .containerinfo .box .icon .text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 10px;
+}
+/* course */
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  background: #fafafa;
+  background: url("./assets/course-background.jpg");
+  background-position: left;
+  background-size: cover;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  font-family: "raleway", sans-serif;
+}
+
+.wrapper h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  color: #fff;
+}
+
+.wrapper > p {
+  color: #fff;
+}
+
+.content-box {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  opacity: 0.88;
+}
+.card {
+  min-height: 220px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  margin: 10px 5px;
+  transition: 0.3s;
+}
+.card i {
+  margin-bottom: 20px;
+  color: #ff5724;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card:hover {
+  background-size: auto;
+  background: linear-gradient(
+      90deg,
+      rgba(2, 2, 36, 0.5) 0%,
+      rgba(9, 9, 221, 0.5) 35%,
+      rgba(0, 212, 255, 0.5) 100%
+    ),
+    url("./assets/data-analyst.jpg");
+  opacity: 0.7;
+  color: #fff;
+}
+.card:hover p {
+  color: #fff;
+}
+
+.card:hover i {
+  color: #fff;
+}
