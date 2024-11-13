@@ -2,11 +2,12 @@ html {
   /* Animation Related Variables */
   --aniDuration: 8s;
   --compCount: 8;
+  position: relative;
 }
 
 /* HEADER SECTION */
 header {
-  height: 70vh;
+  height: 100vh;
   color: var(--white);
   position: relative;
   flex-direction: column;
@@ -15,10 +16,11 @@ header {
   background-size: cover;
   background-position: left;
   background-image: linear-gradient(
-    to bottom,
-    var(--marian-blue) 10%,
-    var(--white)
-  );
+      to bottom,
+      rgba(117, 19, 93, 0) 55%,
+      var(--white) 100%
+    ),
+    url("../images/home-hero-image.jpg");
 }
 
 .headline {
@@ -159,7 +161,8 @@ header {
 }
 
 .meeting-testimonial {
-  max-height: 440px;
+  max-height: 360px;
+  align-self: flex-end;
 }
 
 .quote {

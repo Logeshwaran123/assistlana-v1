@@ -65,3 +65,8 @@ a:hover,
 a:active {
   text-decoration: underline;
 }
+
+footer {
+  color: var(--white) !important;
+  background-color: #222f !important;
+}

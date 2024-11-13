@@ -27,4 +27,8 @@
     padding: 1rem;
     background-color: var(--vivid-sky-blue);
   }
+
+  .flex--cont {
+    flex-wrap: wrap !important;
+  }
 }

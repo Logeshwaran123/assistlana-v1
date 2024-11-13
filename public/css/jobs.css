@@ -1,3 +1,17 @@
+/* SPECIAL */
+.header-content {
+  width: 500px;
+}
+
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(117, 19, 93, 10%) 55%,
+      var(--white) 100%
+    ),
+    url("../images/jobs-hero-image.jpg") !important;
+}
+
 /* Categories */
 .categories-section {
   display: flex;
@@ -20,7 +34,8 @@
 }
 
 .active-cate {
-  background-color: var(--vivid-sky-blue) !important;
+  color: #fff;
+  background-color: #222 !important;
 }
 
 .job {
@@ -35,4 +50,8 @@
 
 .job-headline {
   font-size: 2rem;
+}
+
+.job-short-description {
+  max-width: 9;
 }

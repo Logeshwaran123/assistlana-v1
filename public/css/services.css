@@ -26,6 +26,10 @@
   color: #fff;
 }
 
+.card h2 {
+  text-transform: capitalize;
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -158,7 +162,6 @@
 }
 
 .content-box {
-  width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
